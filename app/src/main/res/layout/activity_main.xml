@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical"
+        android:id="@+id/contain">
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/rb_recommend"
+
+            >
+
+            <RadioButton
+                android:id="@+id/rb_recommend"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="今日推荐"
+                android:textStyle="bold"
+                android:button="@null"
+                android:drawableTop="@drawable/recommendonclick"
+                android:paddingTop="5dp"
+                android:textColor="@color/rgonclick"
+                android:gravity="center" />
+
+            <RadioButton
+                android:id="@+id/rb_found"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="发现"
+                android:textStyle="bold"
+                android:button="@null"
+                android:drawableTop="@drawable/foundonclick"
+                android:paddingTop="5dp"
+                android:textColor="@color/rgonclick"
+                android:gravity="center" />
+
+            <RadioButton
+                android:id="@+id/rb_personal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="个人"
+                android:textStyle="bold"
+                android:button="@null"
+                android:drawableTop="@drawable/personalonclick"
+                android:paddingTop="5dp"
+                android:textColor="@color/rgonclick"
+                android:gravity="center" />
+        </RadioGroup>
+    </RelativeLayout>
+
+</LinearLayout>
