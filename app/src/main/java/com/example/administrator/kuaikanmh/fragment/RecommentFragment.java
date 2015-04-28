@@ -68,12 +68,10 @@ public class RecommentFragment extends Fragment implements SwipeRefreshLayout.On
         list = new ArrayList<Comics>();
 
         utils = new HttpUtils();
-        //  path = "http://api.kuaikanmanhua.com/v1/comic_lists/1?offset=" + 0 + "&limit=50";
 
 
         Refresh();
         //添加头部布局
-//         =inflater.inflate(R.layout.main_list_head, container, false);
         refresh.setOnRefreshListener(this);
 
         offset = 0;
@@ -158,7 +156,6 @@ public class RecommentFragment extends Fragment implements SwipeRefreshLayout.On
 
                     list.clear();
 
-                    // list = new ArrayList<Comics>();
                     for (int i = 0; i < arr.length(); i++) {
                         comics = new Comics();
                         JSONObject json3 = arr.getJSONObject(i);
